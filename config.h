@@ -68,8 +68,9 @@ static const struct arg args[] = {
   { run_command,     " VOL: %s%% |",     "amixer sget Master | tail -1 | awk '{print $5}' | sed 's/[][%]//g'" },
 	{ netspeed_rx,     " ↓ %s ",           "wlan0" },
 	{ netspeed_tx,     " ↑ %s |",          "wlan0" },
-	{ ram_used,        " USAGE: %s -",        NULL },
-	{ cpu_perc,        " %s%% -",            NULL },
+	{ ram_used,        " USAGE: %s ",        NULL },
+	{ cpu_perc,        " %s%% ",            NULL },
   { disk_free,       " %s |",            "/home" },
-	{ datetime,        " %s",              "%Y-%m-%d %H:%M" },
+	{ datetime,        " %s",              "%a %d-%m-%Y %H:%M" },
+//{ datetime,        " %s",              "%Y-%m-%d %H:%M" },
 };
